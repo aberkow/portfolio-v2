@@ -2,16 +2,16 @@ const path = require('path');
 const webpack = require('webpack');
 
 //plugins to handle transpiling scss to css and making sure they're separate from the js
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ExtractCssBlockPlugin = require('extract-css-block-webpack-plugin');
 
-const CopyPlugin = require('copy-webpack-plugin');
+//const CopyPlugin = require('copy-webpack-plugin');
 
 //bring in bourbon/neat to allow for mixins and grid
-const bourbon = require('node-bourbon').includePaths;
-const neat = require('node-neat').includePaths[1];
+// const bourbon = require('node-bourbon').includePaths;
+// const neat = require('node-neat').includePaths[1];
 
-module.exports ={
+module.exports = {
   entry: {
     index: path.resolve(__dirname, './js/index.js')
   },
@@ -32,17 +32,21 @@ module.exports ={
         }
       },
       {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract('style?sourceMap', 'css?sourceMap!sass?includePaths[]=' + bourbon + '&includePaths[]=' + neat)
+        test: /\.css$/,
+        loader: 'style!css'
       }
+      // {
+      //   test: /\.scss$/,
+      //   loader: ExtractTextPlugin.extract('style?sourceMap', 'css?sourceMap!sass?includePaths[]=' + bourbon + '&includePaths[]=' + neat)
+      // }
     ]
   },
   plugins: [
     //allow the stylesheet to be explicitly named
-    new ExtractTextPlugin('[name].css'),
+    //new ExtractTextPlugin('[name].css'),
     //allow for multiple stylesheets using /*! start:.../* /*! end...*/
     new ExtractCssBlockPlugin(),
-    new CopyPlugin()
+    //new CopyPlugin()
   ],
   resolve: {
     moduleDirectories: ['node_modules'],
