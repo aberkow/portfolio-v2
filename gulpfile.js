@@ -7,3 +7,18 @@ const requireDir = require('require-dir');
 // paths in gulp-tasks should be relative to THIS file.
 // NOT the gulp-tasks folder!
 requireDir('./gulp-tasks', {recurse: true});
+
+/*
+gulp.task('name', function(cb) {
+  sequence('one', 'two', 'three', cb);
+});
+*/
+
+gulp.task('watch', function() {
+  gulp.watch('./js/*.js', ['jshint']);
+  gulp.watch('./scss/*.scss', ['scss']);
+});
+
+gulp.task('default', function(cb) {
+  sequence('watch', 'webpack', cb);
+});

@@ -1,5 +1,10 @@
-/*! start:normalize.css */
-@import './normalize.scss';
-/*! end:normalize.css */
+// /*! start:normalize.css */
+// @import './normalize.scss';
+// /*! end:normalize.css */
 @import 'bourbon';
 @import 'neat';
+
+* {
+  color: green;
+  background-color: blue;
+}

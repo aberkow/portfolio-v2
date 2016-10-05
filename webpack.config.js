@@ -21,6 +21,8 @@ module.exports = {
     filename: '[name].js'
   },
   devtool: 'source-map',
+  // watch for changes while using gulp.
+  watch: true,
   module: {
     loaders: [
       {
