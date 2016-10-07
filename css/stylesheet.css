@@ -23,7 +23,7 @@ html {
   right: 0;
   width: 100%;
   min-height: 100%;
-  color: green; }
+  color: #032b2f; }
   #mobile__menu #mobile__menu-list {
     position: fixed;
     top: 20rem;
@@ -31,6 +31,16 @@ html {
     padding: 0;
     font-size: 3rem;
     list-style-type: none; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*#hero {
+  background-image: url("../images/laptop-with-plant.jpeg");
+  background-repeat: no-repeat; }*/
 
 * {
   box-sizing: border-box; }

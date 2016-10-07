@@ -49,7 +49,7 @@
 	__webpack_require__(1);
 	__webpack_require__(5);
 	
-	var $ = __webpack_require__(7);
+	var $ = __webpack_require__(6);
 	
 	var mobileMenuToggle = $('#mobile__menu-toggle');
 	var menu = $('#menu');
@@ -444,44 +444,18 @@
 /* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(6);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./stylesheet.css", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./stylesheet.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 6 */
-/***/ function(module, exports, __webpack_require__) {
-
 	exports = module.exports = __webpack_require__(3)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "html {\n  box-sizing: border-box; }\n\n*, *::after, *::before {\n  box-sizing: inherit; }\n\n#mobile__menu-toggle {\n  position: fixed;\n  z-index: 100;\n  top: 0;\n  right: 0;\n  margin: 8rem 3rem;\n  -ms-transform: rotate(90deg);\n      transform: rotate(90deg);\n  font-size: 2.5rem; }\n  #mobile__menu-toggle #close-menu {\n    display: none; }\n\n#mobile__menu {\n  display: none;\n  position: fixed;\n  top: 0;\n  right: 0;\n  width: 100%;\n  min-height: 100%;\n  color: green; }\n  #mobile__menu #mobile__menu-list {\n    position: fixed;\n    top: 20rem;\n    margin-left: 8rem;\n    padding: 0;\n    font-size: 3rem;\n    list-style-type: none; }\n\n* {\n  box-sizing: border-box; }\n", ""]);
+	exports.push([module.id, "html {\n  box-sizing: border-box; }\n\n*, *::after, *::before {\n  box-sizing: inherit; }\n\n#mobile__menu-toggle {\n  position: fixed;\n  z-index: 100;\n  top: 0;\n  right: 0;\n  margin: 8rem 3rem;\n  -ms-transform: rotate(90deg);\n      transform: rotate(90deg);\n  font-size: 2.5rem; }\n  #mobile__menu-toggle #close-menu {\n    display: none; }\n\n#mobile__menu {\n  display: none;\n  position: fixed;\n  top: 0;\n  right: 0;\n  width: 100%;\n  min-height: 100%;\n  color: #032b2f; }\n  #mobile__menu #mobile__menu-list {\n    position: fixed;\n    top: 20rem;\n    margin-left: 8rem;\n    padding: 0;\n    font-size: 3rem;\n    list-style-type: none; }\n\nhtml {\n  box-sizing: border-box; }\n\n*, *::after, *::before {\n  box-sizing: inherit; }\n\n/*#hero {\n  background-image: url(\"../images/laptop-with-plant.jpeg\");\n  background-repeat: no-repeat; }*/\n\n* {\n  box-sizing: border-box; }\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
