@@ -16,7 +16,7 @@ gulp.task('name', function(cb) {
 
 gulp.task('watch', function() {
   gulp.watch('./js/*.js', ['jshint']);
-  gulp.watch('./scss/*.scss', ['scss']);
+  gulp.watch('./scss/**/*.scss', ['scss']);
 });
 
 gulp.task('default', function(cb) {

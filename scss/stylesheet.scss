@@ -3,8 +3,10 @@
 // /*! end:normalize.css */
 @import 'bourbon';
 @import 'neat';
+@import './partials/_variables';
+@import './partials/menu.scss';
 
 * {
-  color: green;
-  background-color: blue;
+  box-sizing: border-box;
+
 }
