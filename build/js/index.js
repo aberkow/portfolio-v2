@@ -46,7 +46,8 @@
 
 	'use strict';
 	
-	__webpack_require__(1);
+	//require('../images/laptop-with-notebook.jpeg');
+	//require('../css/normalize.css');
 	__webpack_require__(6);
 	//require('../css/stylesheet.css');
 	
@@ -64,77 +65,19 @@
 	});
 	
 	var toggleMenu = function toggleMenu(evt) {
-	  if (menu.text() === 'MENU' || closeMenu.text() === 'CLOSE') {
-	    console.log('menu');
+	  // this way the open/close menu text can be anything instead of hardcoded.
+	  if (menu.text() !== '' || closeMenu.text() !== '') {
 	    menu.toggle();
 	    closeMenu.toggle();
 	    mobileMenu.toggle();
 	  }
 	};
-	
-	// const toggleMenu = () => {
-	//   if (mobileMenu.text() === 'MENU') {
-	//     console.log('menu');
-	//   }
-	//   else {
-	//     console.log('not menu');
-	//   }
-	// }
-	
-	
-	// mobileMenuToggle.on('click', function() {
-	//   $('#menu').toggle();
-	//   closeMenu.toggle();
-	//   mobileMenu.toggle();
-	// });
-	// closeMenu.on('click', function() {
-	//   $('#menu').toggle();
-	//   closeMenu.toggle();
-	//   mobileMenu.toggle();
-	// });
 
 /***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(2);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(5)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./critical.css", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./critical.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 2 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(3)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "#hero {\n  background-image: url(" + __webpack_require__(4) + ");\n  background-repeat: no-repeat; }\n\n#mobile__menu-toggle {\n  position: fixed;\n  z-index: 100;\n  top: 0;\n  right: 0;\n  margin: 8rem 3rem;\n  -ms-transform: rotate(90deg);\n      transform: rotate(90deg);\n  font-size: 2.5rem; }\n  #mobile__menu-toggle #close-menu {\n    display: none; }\n\n#mobile__menu {\n  display: none;\n  position: fixed;\n  top: 0;\n  right: 0;\n  width: 100%;\n  min-height: 100%;\n  color: #032b2f; }\n  #mobile__menu #mobile__menu-list {\n    position: fixed;\n    top: 20rem;\n    margin-left: 8rem;\n    padding: 0;\n    font-size: 3rem;\n    list-style-type: none; }\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 3 */
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */
 /***/ function(module, exports) {
 
 	/*
@@ -188,12 +131,6 @@
 		return list;
 	};
 
-
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "laptop-with-plant.jpeg";
 
 /***/ },
 /* 5 */
@@ -463,8 +400,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./normalize.css", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./normalize.css");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./critical.css", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./critical.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -477,12 +414,12 @@
 /* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(3)();
+	exports = module.exports = __webpack_require__(4)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {\n  display: block; }\n\naudio, canvas, video {\n  display: inline-block;\n  *display: inline;\n  *zoom: 1; }\n\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n[hidden] {\n  display: none; }\n\nhtml {\n  font-size: 100%;\n  -webkit-text-size-adjust: 100%;\n  -ms-text-size-adjust: 100%; }\n\nhtml, button, input, select, textarea {\n  font-family: sans-serif; }\n\nbody {\n  margin: 0; }\n\na:focus {\n  outline: thin dotted; }\n\na:active, a:hover {\n  outline: 0; }\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\nh2 {\n  font-size: 1.5em;\n  margin: 0.83em 0; }\n\nh3 {\n  font-size: 1.17em;\n  margin: 1em 0; }\n\nh4 {\n  font-size: 1em;\n  margin: 1.33em 0; }\n\nh5 {\n  font-size: 0.83em;\n  margin: 1.67em 0; }\n\nh6 {\n  font-size: 0.75em;\n  margin: 2.33em 0; }\n\nabbr[title] {\n  border-bottom: 1px dotted; }\n\nb, strong {\n  font-weight: bold; }\n\nblockquote {\n  margin: 1em 40px; }\n\ndfn {\n  font-style: italic; }\n\nmark {\n  background: #ff0;\n  color: #000; }\n\np, pre {\n  margin: 1em 0; }\n\ncode, kbd, pre, samp {\n  font-family: monospace,serif;\n  _font-family: 'courier new',monospace;\n  font-size: 1em; }\n\npre {\n  white-space: pre;\n  white-space: pre-wrap;\n  word-wrap: break-word; }\n\nq {\n  quotes: none; }\n\nq:before, q:after {\n  content: '';\n  content: none; }\n\nsmall {\n  font-size: 75%; }\n\nsub, sup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\ndl, menu, ol, ul {\n  margin: 1em 0; }\n\ndd {\n  margin: 0 0 0 40px; }\n\nmenu, ol, ul {\n  padding: 0 0 0 40px; }\n\nnav ul, nav ol {\n  list-style: none;\n  list-style-image: none; }\n\nimg {\n  border: 0;\n  -ms-interpolation-mode: bicubic; }\n\nsvg:not(:root) {\n  overflow: hidden; }\n\nfigure {\n  margin: 0; }\n\nform {\n  margin: 0; }\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\nlegend {\n  border: 0;\n  padding: 0;\n  white-space: normal;\n  *margin-left: -7px; }\n\nbutton, input, select, textarea {\n  font-size: 100%;\n  margin: 0;\n  vertical-align: baseline;\n  *vertical-align: middle; }\n\nbutton, input {\n  line-height: normal; }\n\nbutton, html input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer;\n  *overflow: visible; }\n\nbutton[disabled], input[disabled] {\n  cursor: default; }\n\ninput[type=\"checkbox\"], input[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0;\n  *height: 13px;\n  *width: 13px; }\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  box-sizing: content-box; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button, input[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\nbutton::-moz-focus-inner, input::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\ntextarea {\n  overflow: auto;\n  vertical-align: top; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n", ""]);
+	exports.push([module.id, "#hero {\n  background-image: url(\"/images/laptop-with-plant.jpeg\");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 75rem; }\n\n#mobile__menu-toggle {\n  position: fixed;\n  z-index: 100;\n  top: 0;\n  right: 0;\n  margin: 8rem 3rem;\n  -ms-transform: rotate(90deg);\n      transform: rotate(90deg);\n  font-size: 2.5rem;\n  color: #ff6c00; }\n  #mobile__menu-toggle #close-menu {\n    display: none; }\n\n#mobile__menu {\n  display: none;\n  position: fixed;\n  top: 0;\n  right: 0;\n  width: 100%;\n  min-height: 100%;\n  background-color: #032b2f;\n  opacity: 0.9; }\n  #mobile__menu #mobile__menu-list {\n    position: fixed;\n    top: 20rem;\n    margin-left: 8rem;\n    padding: 0;\n    font-size: 3rem;\n    list-style-type: none; }\n\n.logo__container {\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 5rem; }\n  .logo__container .logo__dark, .logo__container .logo__light {\n    height: 9rem; }\n", ""]);
 	
 	// exports
 

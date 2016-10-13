@@ -4,6 +4,10 @@
 // @import 'neat';
 
 #hero {
-  background-image: url('../images/laptop-with-plant.jpeg');
+  background-image: url('/images/laptop-with-plant.jpeg');
+  // background-image: url('/images/minimal-computer.jpeg');
+  // background-image: url('/images/laptop-with-notebook.jpeg');
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 75rem;
 }

@@ -1,5 +1,6 @@
+//require('../images/laptop-with-notebook.jpeg');
+//require('../css/normalize.css');
 require('../css/critical.css');
-require('../css/normalize.css');
 //require('../css/stylesheet.css');
 
 const $ = require('jquery');
@@ -16,32 +17,10 @@ $(document).ready(function() {
 });
 
 const toggleMenu = evt => {
-  if (menu.text() === 'MENU' || closeMenu.text() === 'CLOSE') {
-    console.log('menu');
+  // this way the open/close menu text can be anything instead of hardcoded.
+  if (menu.text() !== '' || closeMenu.text() !== '') {
     menu.toggle();
     closeMenu.toggle();
     mobileMenu.toggle();
   }
 };
-
-
-// const toggleMenu = () => {
-//   if (mobileMenu.text() === 'MENU') {
-//     console.log('menu');
-//   }
-//   else {
-//     console.log('not menu');
-//   }
-// }
-
-
-// mobileMenuToggle.on('click', function() {
-//   $('#menu').toggle();
-//   closeMenu.toggle();
-//   mobileMenu.toggle();
-// });
-// closeMenu.on('click', function() {
-//   $('#menu').toggle();
-//   closeMenu.toggle();
-//   mobileMenu.toggle();
-// });

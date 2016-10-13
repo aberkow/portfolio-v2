@@ -19,6 +19,10 @@ gulp.task('watch', function() {
   gulp.watch('./scss/**/*.scss', ['scss']);
 });
 
+gulp.task('watchStyles', function() {
+  gulp.watch('./scss/**/*.scss', ['scss']);
+});
+
 gulp.task('default', function(cb) {
   sequence('watch', 'webpack', cb);
 });

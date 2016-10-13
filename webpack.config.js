@@ -45,11 +45,15 @@ module.exports = {
         include: path.resolve(__dirname, './css/stylesheet.css'),
         loader: 'css'
       },
+      // {
+      //   test: /\.(jpeg|jpg|png)$/,
+      //   loader: 'url-loader?name=[name].[ext]'
+      // }
       // test for and output images used in css file.
       // includes name of image and extension.
       {
         test: /\.(jpeg|jpg|png)$/,
-        loader: 'file-loader?name=[name].[ext]'
+        loader: 'file-loader?name=../images/[name].[ext]'
       }
       // {
       //   test: /\.scss$/,
