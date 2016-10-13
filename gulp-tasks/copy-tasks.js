@@ -10,12 +10,15 @@ copy = {
     gulp.src('./images/**/*')
       .pipe(gulp.dest('./build/images'))
   },
-  copyJs: function(){
-    gulp.src('./js/**/*')
-      .pipe(gulp.dest('./build/js'))
-  },
+  // don't copy the JS folder. Webpack will handle it.
+  // copyJs: function(){
+  //   gulp.src('./js/**/*')
+  //     .pipe(gulp.dest('./build/js'))
+  // },
+
+  // copy only the .html files. exclude package.json.
   copyRoot: function(){
-    gulp.src(['./*.html', './package.json'])
+    gulp.src(['./*.html', '!./package.json'])
       .pipe(gulp.dest('./build'))
   }
 };

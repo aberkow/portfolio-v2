@@ -1,5 +1,6 @@
+require('../css/critical.css');
 require('../css/normalize.css');
-require('../css/stylesheet.css');
+//require('../css/stylesheet.css');
 
 const $ = require('jquery');
 
