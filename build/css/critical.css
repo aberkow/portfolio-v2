@@ -13,7 +13,10 @@
   -ms-transform: rotate(90deg);
       transform: rotate(90deg);
   font-size: 2.5rem;
+  font-family: "Raleway", serif;
   color: #ff6c00; }
+  #mobile__menu-toggle .mobile__menu-container {
+    cursor: pointer; }
   #mobile__menu-toggle #close-menu {
     display: none; }
 
@@ -32,7 +35,18 @@
     margin-left: 8rem;
     padding: 0;
     font-size: 3rem;
+    font-family: "Raleway", serif;
     list-style-type: none; }
+  #mobile__menu .mobile__menu-item {
+    margin: 2rem auto; }
+  #mobile__menu .mobile__menu-link {
+    text-decoration: none;
+    color: #ff6c00; }
+    #mobile__menu .mobile__menu-link:hover {
+      text-decoration: underline;
+      color: #f5f5f5; }
+    #mobile__menu .mobile__menu-link:visited {
+      color: #ffc499; }
 
 .logo__container {
   position: absolute;

@@ -48,10 +48,10 @@
 	
 	//require('../images/laptop-with-notebook.jpeg');
 	//require('../css/normalize.css');
-	__webpack_require__(6);
+	__webpack_require__(1);
 	//require('../css/stylesheet.css');
 	
-	var $ = __webpack_require__(8);
+	var $ = __webpack_require__(5);
 	
 	var mobileMenuToggle = $('#mobile__menu-toggle');
 	var menu = $('#menu');
@@ -74,10 +74,47 @@
 	};
 
 /***/ },
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(2);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./critical.css", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./critical.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "#hero {\n  background-image: url(\"/images/laptop-with-plant.jpeg\");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 75rem; }\n\n#mobile__menu-toggle {\n  position: fixed;\n  z-index: 100;\n  top: 0;\n  right: 0;\n  margin: 8rem 3rem;\n  -ms-transform: rotate(90deg);\n      transform: rotate(90deg);\n  font-size: 2.5rem;\n  font-family: \"Raleway\", serif;\n  color: #ff6c00; }\n  #mobile__menu-toggle .mobile__menu-container {\n    cursor: pointer; }\n  #mobile__menu-toggle #close-menu {\n    display: none; }\n\n#mobile__menu {\n  display: none;\n  position: fixed;\n  top: 0;\n  right: 0;\n  width: 100%;\n  min-height: 100%;\n  background-color: #032b2f;\n  opacity: 0.9; }\n  #mobile__menu #mobile__menu-list {\n    position: fixed;\n    top: 20rem;\n    margin-left: 8rem;\n    padding: 0;\n    font-size: 3rem;\n    font-family: \"Raleway\", serif;\n    list-style-type: none; }\n  #mobile__menu .mobile__menu-item {\n    margin: 2rem auto; }\n  #mobile__menu .mobile__menu-link {\n    text-decoration: none;\n    color: #ff6c00; }\n    #mobile__menu .mobile__menu-link:hover {\n      text-decoration: underline;\n      color: #f5f5f5; }\n    #mobile__menu .mobile__menu-link:visited {\n      color: #ffc499; }\n\n.logo__container {\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 5rem; }\n  .logo__container .logo__dark, .logo__container .logo__light {\n    height: 9rem; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 3 */
 /***/ function(module, exports) {
 
 	/*
@@ -133,7 +170,7 @@
 
 
 /***/ },
-/* 5 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -385,47 +422,7 @@
 
 
 /***/ },
-/* 6 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(7);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(5)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js!./critical.css", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js!./critical.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(4)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "#hero {\n  background-image: url(\"/images/laptop-with-plant.jpeg\");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 75rem; }\n\n#mobile__menu-toggle {\n  position: fixed;\n  z-index: 100;\n  top: 0;\n  right: 0;\n  margin: 8rem 3rem;\n  -ms-transform: rotate(90deg);\n      transform: rotate(90deg);\n  font-size: 2.5rem;\n  color: #ff6c00; }\n  #mobile__menu-toggle #close-menu {\n    display: none; }\n\n#mobile__menu {\n  display: none;\n  position: fixed;\n  top: 0;\n  right: 0;\n  width: 100%;\n  min-height: 100%;\n  background-color: #032b2f;\n  opacity: 0.9; }\n  #mobile__menu #mobile__menu-list {\n    position: fixed;\n    top: 20rem;\n    margin-left: 8rem;\n    padding: 0;\n    font-size: 3rem;\n    list-style-type: none; }\n\n.logo__container {\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin: 5rem; }\n  .logo__container .logo__dark, .logo__container .logo__light {\n    height: 9rem; }\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 8 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!

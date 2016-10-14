@@ -8,7 +8,11 @@
   margin: 8rem 3rem;
   transform: rotate(90deg);
   font-size: 2.5rem;
+  font-family: $titleFont;
   color: $highlightColor;
+  .mobile__menu-container {
+    cursor: pointer;
+  }
   #close-menu {
     display: none;
   }
@@ -31,6 +35,21 @@
     margin-left: 8rem;
     padding: 0;
     font-size: 3rem;
+    font-family: $titleFont;
     list-style-type: none;
+  }
+  .mobile__menu-item {
+    margin: 2rem auto;
+  }
+  .mobile__menu-link {
+    text-decoration: none;
+    color: $highlightColor;
+    &:hover {
+      text-decoration: underline;
+      color: $mainColor;
+    }
+    &:visited {
+      color: tint($highlightColor, 60%);
+    }
   }
 }
