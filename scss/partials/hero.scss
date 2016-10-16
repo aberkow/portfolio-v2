@@ -3,11 +3,13 @@
 // @import "bourbon";
 // @import 'neat';
 
+//need to add media queries for the main image so it stays relatively consistent.
+
 #hero {
   background-image: url('/images/laptop-with-plant.jpeg');
   // background-image: url('/images/minimal-computer.jpeg');
   // background-image: url('/images/laptop-with-notebook.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 75rem;
+  height: 96rem;
 }

@@ -4,3 +4,12 @@
 @import './partials/hero.scss';
 @import './partials/menu.scss';
 @import './partials/logo.scss';
+@import './partials/intro.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $mainColor;
+}

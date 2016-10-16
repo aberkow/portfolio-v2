@@ -1,0 +1,12 @@
+@import 'bourbon';
+@import 'neat';
+
+.intro__container-text {
+  margin: 2rem;
+}
+
+.intro__text {
+  margin: 0;
+  font-size: 4rem;
+  font-family: $titleFont;
+}
