@@ -1,12 +1,27 @@
 @import 'bourbon';
 @import 'neat';
 
+.intro__container {
+  margin: 0.5rem auto;
+}
+
 .intro__container-text {
-  margin: 2rem;
+  margin: 0 1.3rem;
 }
 
 .intro__text {
   margin: 0;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: $titleFont;
 }
+
+// .intro__arrow {
+//   height: 2rem;
+//   width: 2rem;
+//   border-left: 1px solid;
+//   border-bottom: 1px solid;
+//   transform: rotateZ(-45deg);
+//   position: relative;
+//   bottom: 8px;
+//   left: 45%;
+// }

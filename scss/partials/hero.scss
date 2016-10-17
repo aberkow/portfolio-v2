@@ -6,10 +6,21 @@
 //need to add media queries for the main image so it stays relatively consistent.
 
 #hero {
-  background-image: url('/images/laptop-with-plant.jpeg');
+
+
   // background-image: url('/images/minimal-computer.jpeg');
   // background-image: url('/images/laptop-with-notebook.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 96rem;
+  height: 28rem;
+  @media screen and ($phone) {
+    background-image: url('/images/laptop-with-plant-2.jpg');
+    background-position-x: -5rem;
+  }
+  @media screen and ($tablet) {
+    background-image: url('/images/minimal-computer.jpeg');
+  }
+  @media screen and ($laptop) {
+    background-image: url('/images/laptop-with-notebook.jpeg');
+  }
 }
