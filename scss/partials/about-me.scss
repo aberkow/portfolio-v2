@@ -1,0 +1,21 @@
+// @import 'bourbon';
+// @import 'neat';
+
+.about__outer {
+  @include outer-container;
+}
+
+.about__container {
+  @include span-columns(12);
+  @media screen and ($tablet) {
+    @include span-columns(6);
+  }
+}
+
+.about__text {
+  font-family: $bodyFont;
+  font-size: 1.5rem;
+  @media screen and ($tablet) {
+    margin: 0 auto;
+  }
+}

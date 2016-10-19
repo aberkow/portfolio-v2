@@ -4,8 +4,9 @@
 @import 'bourbon';
 @import 'neat';
 @import './partials/_variables';
-//@import './partials/menu.scss';
-//@import './partials/hero.scss';
+@import './partials/headers';
+@import './partials/about-me';
+@import './partials/skills';
 
 * {
   box-sizing: border-box;

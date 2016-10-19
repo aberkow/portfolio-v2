@@ -1,7 +1,7 @@
 #hero {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 30rem; }
+  height: 28rem; }
   @media screen and (max-width: 767px) {
     #hero {
       background-image: url("/images/laptop-with-plant-2.jpg");
@@ -36,6 +36,7 @@
   right: 0;
   width: 100%;
   min-height: 100%;
+  z-index: 2;
   background-color: #032b2f;
   opacity: 0.9; }
   #mobile__menu #mobile__menu-list {
@@ -73,8 +74,11 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.intro__container {
+  margin: 0.5rem auto; }
+
 .intro__container-text {
-  margin: 0 2rem; }
+  margin: 0 1.3rem; }
 
 .intro__text {
   margin: 0;

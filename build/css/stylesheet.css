@@ -4,5 +4,40 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.about__header, .project__header, .skills__header {
+  font-family: "Raleway", serif; }
+
+.about__outer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .about__outer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.about__container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .about__container:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 768px) {
+    .about__container {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .about__container:last-child {
+        margin-right: 0; } }
+
+.about__text {
+  font-family: "Open Sans", serif;
+  font-size: 1.5rem; }
+  @media screen and (min-width: 768px) {
+    .about__text {
+      margin: 0 auto; } }
+
 * {
   box-sizing: border-box; }
