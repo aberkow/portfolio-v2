@@ -14,6 +14,10 @@ gulp.task('name', function(cb) {
 });
 */
 
+gulp.task('style', function(cb) {
+  sequence('scss', 'copyCSS', cb)
+});
+
 gulp.task('watch', function() {
   gulp.watch('./js/*.js', ['jshint']);
   gulp.watch('./scss/**/*.scss', ['scss']);

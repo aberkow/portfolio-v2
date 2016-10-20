@@ -4,7 +4,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.about__header, .project__header, .skills__header {
+.about__header, .project__header, .skills__header, .skills__list-group {
   font-family: "Raleway", serif; }
 
 .about__outer {
@@ -38,6 +38,55 @@ html {
   @media screen and (min-width: 768px) {
     .about__text {
       margin: 0 auto; } }
+
+.skills__container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .skills__container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.skills__container-full {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin: 0 2rem; }
+  .skills__container-full:last-child {
+    margin-right: 0; }
+  .skills__container-full .skills__container-subsection {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin: 0; }
+    .skills__container-full .skills__container-subsection:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 768px) {
+      .skills__container-full .skills__container-subsection {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin: 0; }
+        .skills__container-full .skills__container-subsection:last-child {
+          margin-right: 0; } }
+    @media screen and (min-width: 1024px) {
+      .skills__container-full .skills__container-subsection {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 14.70196%;
+        margin: 0; }
+        .skills__container-full .skills__container-subsection:last-child {
+          margin-right: 0; } }
+
+.skills__list {
+  list-style-type: none; }
+  .skills__list .skills__list-item {
+    font-family: "Open Sans", serif; }
 
 * {
   box-sizing: border-box; }

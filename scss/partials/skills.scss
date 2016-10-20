@@ -1,0 +1,28 @@
+.skills__container {
+  @include outer-container;
+}
+
+.skills__container-full {
+  @include span-columns(12);
+  margin: 0 2rem;
+  .skills__container-subsection {
+    // display sections in a column on phones, side by side on tablet, and in a row on laptop.
+    @include span-columns(12);
+    margin: 0;
+    @media screen and ($tablet) {
+      @include span-columns(6 of 12);
+      margin: 0;
+    }
+    @media screen and ($laptop) {
+      @include span-columns(2 of 12);
+      margin: 0;
+    }
+  }
+}
+
+.skills__list {
+  list-style-type: none;
+  .skills__list-item {
+    font-family: $bodyFont;
+  }
+}

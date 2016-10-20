@@ -2,10 +2,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 28rem; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 500px) {
     #hero {
       background-image: url("/images/laptop-with-plant-2.jpg");
       background-position-x: -5rem; } }
+  @media screen and (max-width: 767px) {
+    #hero {
+      background-image: url("/images/laptop-with-plant-2.jpg");
+      background-position-x: 0; } }
   @media screen and (min-width: 768px) {
     #hero {
       background-image: url("/images/minimal-computer.jpeg"); } }
