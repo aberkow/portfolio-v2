@@ -12,10 +12,12 @@
       background-position-x: 0; } }
   @media screen and (min-width: 768px) {
     #hero {
-      background-image: url("/images/minimal-computer.jpeg"); } }
+      background-image: url("/images/minimal-computer.jpeg");
+      background-position-x: 0; } }
   @media screen and (min-width: 1024px) {
     #hero {
-      background-image: url("/images/laptop-with-notebook.jpeg"); } }
+      background-image: url("/images/laptop-with-notebook.jpeg");
+      background-position-x: 0; } }
 
 #mobile__menu-toggle {
   position: fixed;
@@ -78,16 +80,44 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.intro__container {
-  margin: 0.5rem auto; }
+#intro {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #intro::after {
+    clear: both;
+    content: "";
+    display: table; }
 
-.intro__container-text {
-  margin: 0 1.3rem; }
+.intro__container {
+  margin: 1rem auto;
+  width: 17rem; }
+  @media screen and (max-width: 767px) {
+    .intro__container {
+      width: 25rem; } }
+  @media screen and (min-width: 768px) {
+    .intro__container {
+      width: 33rem; } }
+  @media screen and (min-width: 1024px) {
+    .intro__container {
+      width: 44rem; } }
 
 .intro__text {
   margin: 0;
   font-size: 2rem;
-  font-family: "Raleway", serif; }
+  font-family: "Raleway", serif;
+  line-height: 3.5rem; }
+  @media screen and (max-width: 767px) {
+    .intro__text {
+      font-size: 3rem; } }
+  @media screen and (min-width: 768px) {
+    .intro__text {
+      font-size: 4rem;
+      line-height: 3.4rem; } }
+  @media screen and (min-width: 1024px) {
+    .intro__text {
+      font-size: 5.3rem;
+      line-height: 4.3rem; } }
 
 * {
   box-sizing: border-box; }

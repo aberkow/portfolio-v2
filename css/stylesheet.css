@@ -83,7 +83,11 @@ html {
         .skills__container-full .skills__container-subsection:last-child {
           margin-right: 0; } }
 
+.skills__list-group {
+  margin: 0; }
+
 .skills__list {
+  margin: 0;
   list-style-type: none; }
   .skills__list .skills__list-item {
     font-family: "Open Sans", serif; }

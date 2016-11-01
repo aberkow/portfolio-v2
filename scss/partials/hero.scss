@@ -18,8 +18,10 @@
   }
   @media screen and ($tablet) {
     background-image: url('/images/minimal-computer.jpeg');
+    background-position-x: 0;
   }
   @media screen and ($laptop) {
     background-image: url('/images/laptop-with-notebook.jpeg');
+    background-position-x: 0;
   }
 }
