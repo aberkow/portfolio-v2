@@ -1,15 +1,16 @@
 // import only files to be transpiled to critical css style tags.
 
 @import './partials/_variables.scss';
-@import './partials/hero.scss';
 @import './partials/menu.scss';
 @import './partials/logo.scss';
 @import './partials/intro.scss';
+@import './partials/hero.scss';
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  min-width: 320px;
   background-color: $mainColor;
 }

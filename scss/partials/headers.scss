@@ -1,3 +1,9 @@
 .about__header, .project__header, .skills__header, .skills__list-group {
   font-family: $titleFont;
+  @media screen and ($tablet) {
+    font-size: 3rem;
+  }
+  @media screen and ($laptop), screen and ($desktop) {
+    font-size: 4rem;
+  }
 }

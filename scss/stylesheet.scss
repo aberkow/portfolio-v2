@@ -5,10 +5,15 @@
 @import 'neat';
 @import './partials/_variables';
 @import './partials/headers';
-@import './partials/about-me';
-@import './partials/skills';
+@import './partials/projects';
+// @import './partials/about-me';
+// @import './partials/skills';
 
 * {
   box-sizing: border-box;
 
+}
+
+body {
+  min-width: 320px;
 }

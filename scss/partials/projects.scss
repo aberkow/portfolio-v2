@@ -1,0 +1,22 @@
+@import 'bourbon';
+@import 'neat';
+
+#projects {
+
+  margin: 0 1.5rem;
+}
+
+.project {
+  @include outer-container;
+}
+
+.project__description-testimonial {
+  font-family: $bodyFont;
+}
+
+.project__image-container {
+  @include span-columns(12);
+  .project__image {
+    width: 100%;
+  }
+}
