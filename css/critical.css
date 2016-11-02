@@ -69,34 +69,37 @@ html {
     display: table; }
 
 .intro__container {
-  margin: 6rem auto;
+  margin: 6rem auto 1rem auto;
   width: 17rem; }
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 501px) {
     .intro__container {
       width: 25rem; } }
   @media screen and (min-width: 768px) {
     .intro__container {
+      margin: 6rem auto;
       width: 33rem; } }
   @media screen and (min-width: 1024px) {
     .intro__container {
+      margin: 6rem auto;
       width: 44rem; } }
 
 .intro__text {
   margin: 0;
   font-size: 2rem;
   font-family: "Raleway", serif;
-  line-height: 3.5rem; }
-  @media screen and (max-width: 767px) {
+  line-height: 2.5rem; }
+  @media screen and (min-width: 501px) {
     .intro__text {
-      font-size: 3rem; } }
+      font-size: 3rem;
+      line-height: 3.4rem; } }
   @media screen and (min-width: 768px) {
     .intro__text {
       font-size: 4rem;
-      line-height: 3.4rem; } }
-  @media screen and (min-width: 1024px) {
+      line-height: 3.5rem; } }
+  @media screen and (min-width: 1024px), screen and (min-width: 1440px) {
     .intro__text {
-      font-size: 5.3rem;
-      line-height: 4.3rem; } }
+      font-size: 5rem;
+      line-height: 5rem; } }
 
 #hero {
   background-repeat: no-repeat;
@@ -106,7 +109,7 @@ html {
     #hero {
       background-image: url("/images/laptop-with-plant-2.jpg");
       background-position-x: -5rem; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 501px) {
     #hero {
       background-image: url("/images/laptop-with-plant-2.jpg");
       background-position-x: 0; } }

@@ -2,21 +2,73 @@
 @import 'neat';
 
 #projects {
-
+  // @include outer-container;
   margin: 0 1.5rem;
 }
 
+figure {
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 17rem;
+  background-color: tint($highlightColor, 80%);
+  color: $darkColor;
+  @media screen and ($tablet), screen and ($laptop), screen and ($desktop) {
+    width: 33rem;
+  }
+}
+
 .project {
+  // @include row();
   @include outer-container;
 }
 
-.project__description-testimonial {
-  font-family: $bodyFont;
+.project__description {
+  @include span-columns(12);
+  @media screen and ($tablet), screen and ($laptop), screen and ($desktop) {
+    @include span-columns(4);
+  }
 }
 
 .project__image-container {
   @include span-columns(12);
+  @media screen and ($tablet), screen and ($laptop), screen and ($desktop) {
+    @include span-columns(8);
+    @include omega();
+  }
   .project__image {
     width: 100%;
   }
 }
+
+
+
+// .project__description {
+//   @include span-columns(12);
+//   @media screen and ($tablet), screen and ($laptop), screen and ($desktop) {
+//     @include span-columns(4);
+//     // display: inline-block;
+//   }
+// }
+//
+// .project__image-container {
+//   @include span-columns(12);
+//   @media screen and ($tablet), screen and ($laptop), screen and ($desktop) {
+//     @include span-columns(8);
+//     @include omega();
+//     // display: inline-block;
+//   }
+//   .project__image {
+//     width: 100%;
+//   }
+// }
+//
+// .project__description-testimonial {
+//   font-family: $bodyFont;
+// }
+
+// .project__image-container {
+//   @include span-columns(12);
+//   .project__image {
+//     width: 100%;
+//   }
+// }

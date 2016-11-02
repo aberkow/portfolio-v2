@@ -13,6 +13,12 @@ html {
     .about__header, .project__header, .skills__header, .skills__list-group {
       font-size: 4rem; } }
 
+.project__title {
+  font-family: "Raleway", serif; }
+  @media screen and (min-width: 1024px), screen and (min-width: 1440px) {
+    .project__title {
+      font-size: 2rem; } }
+
 html {
   box-sizing: border-box; }
 
@@ -21,6 +27,16 @@ html {
 
 #projects {
   margin: 0 1.5rem; }
+
+figure {
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: 17rem;
+  background-color: #ffe2cc;
+  color: #032b2f; }
+  @media screen and (min-width: 768px), screen and (min-width: 1024px), screen and (min-width: 1440px) {
+    figure {
+      width: 33rem; } }
 
 .project {
   max-width: 68em;
@@ -31,8 +47,21 @@ html {
     content: "";
     display: table; }
 
-.project__description-testimonial {
-  font-family: "Open Sans", serif; }
+.project__description {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .project__description:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 768px), screen and (min-width: 1024px), screen and (min-width: 1440px) {
+    .project__description {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .project__description:last-child {
+        margin-right: 0; } }
 
 .project__image-container {
   float: left;
@@ -41,6 +70,15 @@ html {
   width: 100%; }
   .project__image-container:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 768px), screen and (min-width: 1024px), screen and (min-width: 1440px) {
+    .project__image-container {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-right: 0; }
+      .project__image-container:last-child {
+        margin-right: 0; } }
   .project__image-container .project__image {
     width: 100%; }
 

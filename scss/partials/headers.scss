@@ -7,3 +7,10 @@
     font-size: 4rem;
   }
 }
+
+.project__title {
+  font-family: $titleFont;
+  @media screen and ($laptop), screen and ($desktop) {
+    font-size: 2rem;
+  }
+}
