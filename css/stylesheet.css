@@ -37,26 +37,53 @@ html {
     content: "";
     display: table; }
 
-.project__slide-container {
-  position: relative; }
+.project__description {
+  display: block;
+  color: #032b2f; }
+  .project__description::after {
+    clear: both;
+    content: "";
+    display: table; }
 
-.project__slide-group {
+.bullets {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
   width: 100%;
-  height: 100%;
-  position: relative; }
+  margin: 0 0 1rem 0;
+  padding: 0;
+  text-align: center; }
+  .bullets:last-child {
+    margin-right: 0; }
+  .bullets .bullet {
+    list-style-type: none;
+    display: inline-block; }
+    .bullets .bullet .fa {
+      width: 3rem;
+      position: relative;
+      top: 0.2rem;
+      color: #ff6c00; }
+    .bullets .bullet h3 {
+      display: inline-block;
+      color: #ff6c00; }
 
-.slide {
-  width: 75%;
-  position: absolute;
-  left: 13%;
-  margin: auto;
+.project__description-image--container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  position: relative; }
+  .project__description-image--container:last-child {
+    margin-right: 0; }
+  .project__description-image--container .project__description-image {
+    width: 100%; }
+
+.hover__hidden {
   display: none; }
 
-.slide:first-child {
+.hover__visible:hover > div {
+  position: absolute;
   display: block; }
-
-.slide__image {
-  width: 100%; }
 
 .ba-slider {
   position: relative;
