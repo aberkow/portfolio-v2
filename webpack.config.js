@@ -66,6 +66,9 @@ module.exports = {
     //new ExtractTextPlugin('[name].css'),
     //allow for multiple stylesheets using /*! start:.../* /*! end...*/
     new ExtractCssBlockPlugin(),
+    // new webpack.ProvidePlugin({
+    //   $: "jquery"
+    // })
     //new CopyPlugin()
   ],
   resolve: {

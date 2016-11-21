@@ -46,22 +46,28 @@
 
 	'use strict';
 	
-	//require('../images/laptop-with-notebook.jpeg');
-	//require('../css/normalize.css');
 	__webpack_require__(1);
-	//require('../css/stylesheet.css');
 	
 	var $ = __webpack_require__(5);
+	// require('./before-after.min.js');
 	
+	// for menu
 	var mobileMenuToggle = $('#mobile__menu-toggle');
 	var menu = $('#menu');
 	var mobileMenu = $('#mobile__menu');
 	var closeMenu = $('#close-menu');
 	
+	//for before/after images
+	// const baSlider = $(".ba-slider");
+	
 	$(document).ready(function () {
 	  mobileMenuToggle.on('click', function () {
 	    toggleMenu();
 	  });
+	  // baSlider.beforeAfter();
+	
+	
+	  //end document.ready()
 	});
 	
 	var toggleMenu = function toggleMenu(evt) {
@@ -72,6 +78,83 @@
 	    mobileMenu.toggle();
 	  }
 	};
+	
+	// const advance = () => {
+	//   const timeout;
+	//   const currentIndex = 0;
+	//
+	//   clearTimeout(timeout);
+	//   timeout = setTimeout(function () {
+	//     if (currentIndex < ($slides.length - 1)) {
+	//       move(currentIndex + 1);
+	//     } else {
+	//       move(0);
+	//     }
+	//   }, 1000);
+	// };
+	
+	// $('.slider').each(function() {
+	//   const $this = $(this);
+	//   const $group = $this.find('.project__slide-group');
+	//   const $slides = $this.find('.slide');
+	//   const buttonArray = [];
+	//   let currentIndex = 0;
+	//   let timeout;
+	//
+	//   const move = newIndex => {
+	//     let animateLeft;
+	//     let slideLeft;
+	//
+	//     advance();
+	//
+	//     if ($group.is(':animated') || currentIndex === newIndex) {
+	//       return;
+	//     }
+	//
+	//     buttonArray[currentIndex].removeClass('active');
+	//     buttonArray[newIndex].addClass('.active');
+	//
+	//     if (newIndex > currentIndex) {
+	//       slideLeft = '100%';
+	//       animateLeft = '-100%';
+	//     } else {
+	//       slideLeft = '-100%';
+	//       animateLeft = '100%';
+	//     }
+	//
+	//     $slides.eq(newIndex).css( {left: slideLeft, display: block} );
+	//     $group.animate( {left: animateLeft}, function() {
+	//       $slides.eq(currentIndex).css( {display: 'none'} );
+	//       $slides.eq(newIndex).css( {left: 0} );
+	//       $group.css( {left: 0} );
+	//       currentIndex = newIndex;
+	//     });
+	//
+	//   };
+	//
+	//   const advance = () => {
+	//     clearTimeout(timeout);
+	//     timeout = setTimeout(function() {
+	//       if (currentIndex < ($slides.length - 1)) {
+	//         move(currentIndex + 1);
+	//       } else {
+	//         move(0);
+	//       }
+	//     }, 1000);
+	//   };
+	//
+	//   $.each($slides, function(index) {
+	//     const $button = $('<button type="button" class="slide-btn">&bull;</button>');
+	//     if (index === currentIndex) {
+	//       $button.addClass('active');
+	//     }
+	//     $button.on('click', function() {
+	//       move(index);
+	//     }).appendTo('.project__slide-buttons');
+	//     buttonArray.push($button);
+	//   });
+	//   advance();
+	// });
 
 /***/ },
 /* 1 */
