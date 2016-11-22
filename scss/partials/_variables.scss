@@ -11,3 +11,10 @@ $medium-phone: 'min-width: 501px';
 $tablet: 'min-width: 768px';
 $laptop: 'min-width: 1024px';
 $desktop: 'min-width: 1440px';
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

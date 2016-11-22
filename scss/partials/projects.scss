@@ -55,13 +55,29 @@
 }
 
 .hover__hidden {
-  display: none;
+  display: hidden;
 }
 
-.hover__visible:hover > div {
-  position: absolute;
+.hover__visible:hover > .hover__hidden {
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($mainColor, 0.5);
+  color: $mainColor;
+  p {
+    @include centerer;
+    padding: 1rem;
+    background-color: $darkColor;
+  }
 }
+
+// .hover__visible:hover > div {
+//   position: absolute;
+//   display: block;
+// }
 
 // .project__slide-container {
 //   position: relative;
