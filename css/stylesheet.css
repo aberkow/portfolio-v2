@@ -26,64 +26,30 @@ html {
   box-sizing: inherit; }
 
 #projects {
-  margin: 0 1.5rem; }
-
-.project {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .project::after {
+  display: block;
+  height: 28rem; }
+  #projects::after {
     clear: both;
     content: "";
     display: table; }
+  #projects .project__container {
+    margin: 0; }
+    @media screen and (min-width: 768px) {
+      #projects .project__container {
+        display: inline-block;
+        margin: 0;
+        float: left;
+        width: 50%; } }
+    @media screen and (min-width: 1024px), screen and (min-width: 1440px) {
+      #projects .project__container {
+        display: inline-block;
+        margin: 0;
+        float: left;
+        width: 33.33333334%; } }
 
-.project__description {
-  display: block;
-  color: #032b2f; }
-  .project__description::after {
-    clear: both;
-    content: "";
-    display: table; }
-
-.bullets {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  margin: 0 0 1rem 0;
-  padding: 0;
-  text-align: center; }
-  .bullets:last-child {
-    margin-right: 0; }
-  .bullets .bullet {
-    list-style-type: none;
-    display: inline-block; }
-    .bullets .bullet .fa {
-      width: 3rem;
-      position: relative;
-      top: 0.2rem;
-      color: #ff6c00; }
-    .bullets .bullet h3 {
-      display: inline-block;
-      color: #ff6c00; }
-
-.project__description-image--container {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  position: relative; }
-  .project__description-image--container:last-child {
-    margin-right: 0; }
-  .project__description-image--container .project__description-image {
-    width: 100%; }
-
-.hover__hidden {
-  display: none; }
-
-.hover__visible:hover > div {
-  position: absolute;
-  display: block; }
+.project__img {
+  height: 100%;
+  width: 100%; }
 
 .ba-slider {
   position: relative;

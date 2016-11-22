@@ -2,189 +2,39 @@
 @import 'neat';
 
 #projects {
-  // @include outer-container;
-  margin: 0 1.5rem;
-}
-
-.project {
-  @include outer-container;
-}
-
-.project__description {
-  //@include span-columns(12);
   @include row();
-  color: $darkColor;
-}
-
-.bullets {
-  @include span-columns(12);
-  margin: 0 0 1rem 0;
-
-  padding: 0;
-  text-align: center;
-
-  .bullet {
-    list-style-type: none;
-    display: inline-block;
-
-    .fa {
-      width: 3rem;
-      position: relative;
-      top: 0.2rem;
-      color: $highlightColor;
-    }
-    h3 {
+  height: 28rem;
+  .project__container {
+    margin: 0;
+    @media screen and ($tablet) {
       display: inline-block;
-      color: $highlightColor;
+      margin: 0;
+      float: left;
+      width: 50%;
+    }
+    @media screen and ($laptop), screen and ($desktop) {
+      display: inline-block;
+      margin: 0;
+      float: left;
+      width: 33.33333334%;
     }
   }
+}
 
+.project__img {
+  height: 100%;
+  width: 100%;
 }
 
 
-.project__description-image--container {
-  @include span-columns(12);
-  position: relative;
-  // @media screen and ($tablet), screen and ($laptop), screen and ($desktop) {
-  //   @include span-columns(8);
-  //   @include omega();
-  // }
-  .project__description-image {
-    width: 100%;
-  }
-}
-
-.hover__hidden {
-  display: none;
-}
-
-.hover__visible:hover > div {
-  position: absolute;
-  display: block;
-}
-
-// .project__slide-container {
-//   position: relative;
-// }
-//
-// .project__slide-group {
-//   width: 100%;
-//   height: 100%;
-//   position: relative;
-// }
-//
-// .slide {
-//   width: 75%;
-//   position: absolute;
-//   left: 13%;
-//   margin: auto;
-//   display: none;
-// }
-//
-// .slide:first-child {
-//   display: block;
-// }
-//
-// .slide__image {
-//   width: 100%;
-// }
-//
-// .project__slide-prev {
-//
-// }
-//
-// .project_-slide-next {
-//
-// }
-
-// .project__slide-container {
-//   position: relative;
-//   overflow: hidden;
-//   height: 300px;
-// }
-//
-// .project__slide-group {
-//   width: 100%;
-//   height: 100%;
-//   position: relative;
-// }
-//
-// .slide {
-//   width: 100%;
-//   height: 100%;
-//   display: none;
-//   position: absolute;
-// }
-//
-// .slide:first-child {
-//   display: block;
-// }
-
-
-//
-// figure {
-//   margin: 0 auto;
-//   padding: 1rem 0;
-//   width: 17rem;
-//   background-color: tint($highlightColor, 80%);
-//   color: $darkColor;
-//   @media screen and ($tablet), screen and ($laptop), screen and ($desktop) {
-//     width: 33rem;
-//   }
-// }
-//
-// .project {
-//   // @include row();
-//   @include outer-container;
-// }
-//
-// .project__description {
+// @include row();
+// // @include outer-container();
+// height: 28rem;
+// .project__container {
 //   @include span-columns(12);
+//   margin: 0;
 //   @media screen and ($tablet), screen and ($laptop), screen and ($desktop) {
 //     @include span-columns(4);
-//   }
-// }
-//
-// .project__image-container {
-//   @include span-columns(12);
-//   @media screen and ($tablet), screen and ($laptop), screen and ($desktop) {
-//     @include span-columns(8);
 //     @include omega();
-//   }
-//   .project__image {
-//     width: 100%;
-//   }
-// }
-
-
-
-// .project__description {
-//   @include span-columns(12);
-//   @media screen and ($tablet), screen and ($laptop), screen and ($desktop) {
-//     @include span-columns(4);
-//     // display: inline-block;
-//   }
-// }
-//
-// .project__image-container {
-//   @include span-columns(12);
-//   @media screen and ($tablet), screen and ($laptop), screen and ($desktop) {
-//     @include span-columns(8);
-//     @include omega();
-//     // display: inline-block;
-//   }
-//   .project__image {
-//     width: 100%;
-//   }
-// }
-//
-// .project__description-testimonial {
-//   font-family: $bodyFont;
-// }
-
-// .project__image-container {
-//   @include span-columns(12);
-//   .project__image {
-//     width: 100%;
 //   }
 // }
