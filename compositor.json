@@ -1,0 +1,81 @@
+{
+  "name": "aberkow/portfolio-v2",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Swiss",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/SwissHeader",
+      "article": "article/SwissArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "heading": {
+      "fontWeight": 700,
+      "letterSpacing": "-0.01em"
+    },
+    "layout": {
+      "fluid": true
+    },
+    "colors": {
+      "text": "#000",
+      "background": "#fff",
+      "primary": "#05a",
+      "secondary": "#444",
+      "highlight": "#f30",
+      "border": "#ccc",
+      "muted": "#eee"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/aberkow/portfolio-v2",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/portfolio-v2",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "portfolio-v2",
+      "subhead": "A new version of my portfolio built with many new skills I've learned",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "portfolio-v2: A new version of my portfolio built with many new skills I've learned",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "aberkow",
+          "repo": "portfolio-v2"
+        }
+      ],
+      "text": "v1.0.0"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/aberkow/portfolio-v2",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/aberkow",
+          "text": "aberkow"
+        }
+      ]
+    }
+  ]
+}
